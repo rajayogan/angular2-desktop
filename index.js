@@ -1,5 +1,7 @@
-var app = require('app');
-var BrowserWindow = require('browser-window');
+var electron = require('electron');
+var app = electron.app;
+//var BrowserWindow = require('browser-window');
+var BrowserWindow = electron.BrowserWindow;
 
 app.on('ready', ()=>{
     var mainWindow = new BrowserWindow({
